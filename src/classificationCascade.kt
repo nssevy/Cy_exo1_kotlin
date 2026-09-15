@@ -1,16 +1,16 @@
-fun whoJour(jour: Int){
-    when(jour) {
-        1 -> println("Lundi")
-        2 -> println("Mardi")
-        3 -> println("Mercredi")
-        4 -> println("Jeudi")
-        5 -> println("Vendredi")
-        in 6..7 -> println("Week-end")
-        else ->  println("Jour inexistant.")
+fun whoTemperature(temperature: Int) {
+    if (temperature < 0) {
+        println("Gel")
+    } else if (temperature < 15) {
+        println("Froid")
+    } else if (temperature < 25) {
+        println("Doux")
+    } else {
+        println("Chaud")
     }
 }
 
 fun main() {
-    val jourEnChiffre: Int = 2;
-    whoJour(jourEnChiffre);
+    val degre: Int = 14;
+    whoTemperature(degre);
 }
