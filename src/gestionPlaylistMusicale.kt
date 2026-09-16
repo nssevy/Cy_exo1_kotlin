@@ -1,5 +1,3 @@
-import kotlin.collections.mutableListOf
-
 data class Playlist(val music: MutableList<String> = mutableListOf() ) {
 
     fun addMusic(musique: String, position: Int) {
@@ -24,12 +22,10 @@ data class Playlist(val music: MutableList<String> = mutableListOf() ) {
         return music.indexOf(musique)
     }
 
-    fun delectMusic(musics: String): mutableListOf() {
-        return music.drop(positionOfMusic(musics))
+    fun delectMusic(musics: String) {
+        music.removeAt(positionOfMusic(musics))
     }
 }
-/*
-fun isHePresent(playlist: MutableList<String>, music: String): Boolean = if (music in playlist) { true } else {false}*/
 
 fun main() {
     var p = mutableListOf("Bohemian Rhapsody", "Stairway to Heaven", "Hotel California");
@@ -46,9 +42,5 @@ fun main() {
     println("Imagine apparait à la position ${maPlaylist.positionOfMusic("Imagine")}");
     maPlaylist.delectMusic("Hotel California")
     println(maPlaylist);
-    /*
-
-    println(isHePresent(playlist,"Hotel California"))
-    println("${positionOfMusic(playlist, "Imagine")}")*/
 
 }
