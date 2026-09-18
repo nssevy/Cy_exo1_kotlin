@@ -1,3 +1,5 @@
+package boucles
+
 fun printTriangle(hauteur: Int) {
     if (hauteur > 0) {
         printTriangle(hauteur - 1)

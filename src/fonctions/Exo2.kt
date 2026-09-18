@@ -1,3 +1,5 @@
+package fonctions
+
 fun sommeReel(a: Float, b: Float, c: Float) : Float = a + b + c;
 
 fun main() {

@@ -1,3 +1,5 @@
+package fonctions
+
 fun concatenerString(textUn: String, textDeux: String) {
     val phraseAssembler = textUn + textDeux
     println(phraseAssembler)

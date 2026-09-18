@@ -1,3 +1,5 @@
+package boucles
+
 fun whoJour(jour: Int){
     when(jour) {
         1 -> println("Lundi")
@@ -14,3 +16,6 @@ fun main() {
     val jourEnChiffre: Int = 2;
     whoJour(jourEnChiffre);
 }
+/*
+Là la fonction prend en entrer un Int et bient test en casquade cet entier avec toutes les branches du when jusqua tomber sur la bonne valeur, la fn affiche Mardi
+ */

@@ -1,3 +1,5 @@
+package fonctions
+
 fun toMajuscule(text: String) {
     val textEnMajuscule = text.uppercase();
     println(textEnMajuscule)

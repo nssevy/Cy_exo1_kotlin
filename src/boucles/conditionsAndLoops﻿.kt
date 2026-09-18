@@ -1,3 +1,5 @@
+package boucles
+
 fun main(){
 
     val pays: String = "France";
@@ -8,3 +10,7 @@ fun main(){
     }
 
 }
+
+/*
+When permet de tester un paterne à gauche et des lorsque le paterne est rencontrer il prends le contenu de ce qu'il y a à droite dans ce ca là affiche car il y a un print ln.
+ */
